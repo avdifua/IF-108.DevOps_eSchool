@@ -46,7 +46,6 @@ clone_edit_config() {
 	sudo sed -i -e "s|35.242.199.77:3306/ejournal|10.156.0.11:3306/eschool|g" /home/Java/eSchool/src/main/resources/application-production.properties
 }
 
-
 build_app_run() {
 
 	cd /home/Java/eSchool/
