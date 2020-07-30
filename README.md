@@ -32,4 +32,4 @@ For running the creation of instances:
 ```
 If you want to change Region your instances. Look here - > VPC networks in Google cloud and choose correct IP address ranges
 
-In the output, you have to get a working app which deployed in google cloud! Enjoy!
+In the output, you have to get a working eSchool app which deployed in google cloud! Enjoy!
