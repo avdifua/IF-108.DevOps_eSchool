@@ -19,7 +19,6 @@ GRANT ALL PRIVILEGES ON eschool.* TO 'eschool_user'@'%';
 FLUSH PRIVILEGES;
 SQL_QUERY
 rm ~/.my.cnf
-
 }
 
 install_requirements() {
@@ -31,10 +30,8 @@ install_requirements() {
         sudo yum-config-manager --enable mysql57-community
         sudo yum install mysql-community-server -y
         sudo service mysqld start
-
 }
 
 install_requirements
 get_temporary_password
 setup_mysql
-
