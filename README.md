@@ -1,4 +1,3 @@
-# IF-108.DevOps_eSchool
 ## Deploying the app eSchool in google cloud.
 
 Google Cloud Platform Setup Prior to using this plugin, you will first need to make sure you have a Google Cloud Platform account, enable Google Compute Engine, and create a Service Account for API Access.
