@@ -1,4 +1,6 @@
 ## Deploying the app eSchool in google cloud.
+And don't forget to open 8080 port in google cloud:
+VPC network > Firewall
 
 Google Cloud Platform Setup Prior to using this plugin, you will first need to make sure you have a Google Cloud Platform account, enable Google Compute Engine, and create a Service Account for API Access.
 
