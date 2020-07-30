@@ -1,5 +1,5 @@
 # IF-108.DevOps_eSchool
-Deploying the app eSchool in google cloud.
+# Deploying the app eSchool in google cloud.
 
 Google Cloud Platform Setup Prior to using this plugin, you will first need to make sure you have a Google Cloud Platform account, enable Google Compute Engine, and create a Service Account for API Access.
 
@@ -18,17 +18,17 @@ Google Cloud Platform Setup Prior to using this plugin, you will first need to m
     7. Add the SSH key you're going to use to GCE Metadata in Compute -> Compute Engine -> Metadata section of the console, SSH Keys tab. (Read the SSH Support readme section for more information.)
     
 What do you have to change in vagrant file. Example:
-
+```bash
     google.google_project_id = "sofserv-if" - Project ID
     google.google_json_key_location = "/home/al/Vagrant/sofserv-if-123573ea618.json" - path to JSON
 
     override.ssh.username = "al" - name in linux system
     override.ssh.private_key_path = "~/.ssh/virtual_home" - path where stored keys
-
+```
 For running the creation of instances:
-      
+```bash      
     vagrant up --provider=google
-
+```
 If you want to change Region your instances. Look here - > VPC networks in Google cloud and choose correct IP address ranges
 
 In the output, you have to get a working app which deployed in google cloud! Enjoy!
