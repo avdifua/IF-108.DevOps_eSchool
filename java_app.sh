@@ -33,7 +33,7 @@ clone_edit_config() {
 	ext_ip=$(curl ifconfig.me)
 	mkdir /home/Java
 	cd /home/Java
-	sudo git clone https://github.com/yurkovskiy/eSchool
+	sudo git clone https://github.com/protos-kr/eSchool.git
 
 	sudo sed -i -e "s|localhost:3306/eschool|10.156.0.11:3306/eschool|g" /home/Java/eSchool/src/main/resources/application.properties
 	sudo sed -i -e "s/DATASOURCE_USERNAME:root/DATASOURCE_USERNAME:eschool_user/g" /home/Java/eSchool/src/main/resources/application.properties
