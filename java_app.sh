@@ -73,7 +73,6 @@ install_and_build_frontend() {
 }
 
 setup_virtual_host() {
-	
 
 	setenforce 0
 	sudo yum install httpd -y
@@ -101,7 +100,6 @@ sudo cat <<_EOF > /etc/httpd/sites-available/eSchool.conf
 </VirtualHost>
 _EOF
 
-
 	sudo chown -R apache:apache -R /var/www/eSchool/
 	sudo chmod 766 -R /var/www/eSchool/
 	sudo systemctl restart httpd
@@ -110,9 +108,6 @@ _EOF
 	sleep 7
 
 }
-
-
-
 
 install_soft
 install_maven
