@@ -104,7 +104,7 @@ _EOF
 	sudo systemctl restart httpd
 	cd /home/Java/eSchool/target/
 	sudo java -jar eschool.jar &
-	sleep 7
+	sleep 20 
 }
 
 install_soft
