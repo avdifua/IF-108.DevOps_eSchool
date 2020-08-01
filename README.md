@@ -1,4 +1,7 @@
 ## Deploying the app eSchool in google cloud.
+Frontend works on direct IP.
+Backend works on 8080 port.
+
 Don't forget to open 8080 port in google cloud:
 VPC network > Firewall
 
@@ -32,4 +35,4 @@ For running the creation of instances:
 ```
 If you want to change Region your instances. Look here - > VPC networks in Google cloud and choose correct IP address ranges
 
-In the output, you have to get a working eSchool app which deployed in google cloud! Enjoy!
+In the output, you have to get a working eSchool app with frontend and backend which deployed in google cloud! Enjoy!
