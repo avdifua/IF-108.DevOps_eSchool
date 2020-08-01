@@ -69,7 +69,6 @@ install_and_build_frontend() {
 	sudo npm install
 	sudo rm -rf package-lock.json
 	sudo ng build --prod
-
 }
 
 setup_virtual_host() {
@@ -106,7 +105,6 @@ _EOF
 	cd /home/Java/eSchool/target/
 	sudo java -jar eschool.jar &
 	sleep 7
-
 }
 
 install_soft
