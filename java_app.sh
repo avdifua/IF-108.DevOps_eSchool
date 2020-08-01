@@ -3,8 +3,7 @@
 install_soft() {
 
 	sudo yum update -y
-	sudo yum install java-1.8.0-openjdk wget git httpd -y
-	sudo systemctl enable httpd
+	sudo yum install java-1.8.0-openjdk wget git -y
 	sudo yum install maven -y
 }
 
@@ -51,8 +50,6 @@ build_backend_and_run() {
 
 	cd /home/Java/eSchool/
 	sudo mvn package -DskipTests
-	cd target/
-	sudo java -jar eschool.jar &
 }
 
 install_and_build_frontend() {
@@ -79,6 +76,9 @@ setup_virtual_host() {
 	
 
 	setenforce 0
+	sudo yum install httpd -y
+	sudo systemctl enable httpd
+	sudo systemctl start httpd
 	sudo mkdir /var/www/eSchool
 	sudo cp -r /home/Java/final_project/dist/eSchool/* /var/www/eSchool
 	sudo cp /home/Java/final_project/.htaccess /var/www/eSchool/
@@ -105,6 +105,9 @@ _EOF
 	sudo chown -R apache:apache -R /var/www/eSchool/
 	sudo chmod 766 -R /var/www/eSchool/
 	sudo systemctl restart httpd
+	cd /home/Java/eSchool/target/
+	sudo java -jar eschool.jar &
+	sleep 7
 
 }
 
